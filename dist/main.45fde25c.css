@@ -1,0 +1,81 @@
+body{
+    overflow: hidden
+}
+.page{
+    display: flex;
+    flex-wrap: wrap;
+}
+.page > section{
+    width: 50vw;
+    height: 50vh;
+    border:1px solid red
+}*{margin: 0;padding: 0;box-sizing: border-box;}
+*::before,*::after{box-sizing: border-box;}
+ul,ol{list-style-type: none;}.app1 > button{
+    width: 30px;
+    height: 15px;
+}.app2 > .olTab{
+    display: flex;
+}
+.app2 > .olTab > li{
+    border:1px solid red;
+    width: 50%;
+    height: 30px;
+    text-align: center;
+}
+.app2 > .olTab > li.active{
+    background: yellowgreen;
+    color:#fff;
+}
+.app2 > .olContent{
+    display: flex;
+}
+.app2 > .olContent > li{
+    display: none;
+}
+.app2 > .olContent > li.active2{
+    display: block;
+}.app3 > .square{
+    border:1px solid red;
+    width: 10vw;
+    height: 10vw;
+    margin-left: 10vw;
+    margin-top: 5vw;
+    transition: transform 1s;
+}
+.app3 > .square.active{
+    transform: translateX(15vw);
+}.app4 > .circle{
+    border:1px solid red;
+    border-radius: 50%;
+    width: 15vw;
+    height: 15vw;
+    margin-left: 15vw;
+    margin-top: 5vw;
+}
+.app4 > .circle.active{
+    animation: change 5s infinite alternate;
+}
+.app4 > .circle.stop{
+    animation-play-state:paused;
+}
+@keyframes change{
+    0%{
+        background: red;
+    }
+    20%{
+        background: yellow;
+    }
+    40%{
+        background: blue;
+    }
+    60%{
+        background: green;
+    }
+    80%{
+        background: cyan;
+    }
+    100%{
+        background: purple;
+    }
+}

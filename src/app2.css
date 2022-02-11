@@ -1,0 +1,22 @@
+.app2 > .olTab{
+    display: flex;
+}
+.app2 > .olTab > li{
+    border:1px solid red;
+    width: 50%;
+    height: 30px;
+    text-align: center;
+}
+.app2 > .olTab > li.active{
+    background: yellowgreen;
+    color:#fff;
+}
+.app2 > .olContent{
+    display: flex;
+}
+.app2 > .olContent > li{
+    display: none;
+}
+.app2 > .olContent > li.active2{
+    display: block;
+}
